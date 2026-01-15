@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudPipe - Modern Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>☁️ CloudPipe</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to CloudPipe</h2>
+            <p class="subtitle">Building Modern Websites for Local Businesses</p>
+            <p class="hero-description">
+                We help small businesses establish their online presence with beautiful, 
+                fast, and reliable websites.
+            </p>
+            <button class="cta-button" onclick="scrollToContact()">Get Started</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites tailored to your business needs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>CI/CD Pipeline</h3>
+                    <p>Automated deployment for faster, reliable updates</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Beautiful websites that work on all devices</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Lightning-fast loading times for better user experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About CloudPipe</h2>
+            <p>
+                CloudPipe is a modern web development company focused on helping local businesses 
+                succeed online. We've modernized our workflow with automated CI/CD pipelines, 
+                ensuring every website update is deployed quickly and reliably.
+            </p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Automated Deployments</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Uptime Monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CloudPipe. All rights reserved.</p>
+            <p class="deployment-info">Deployed automatically via GitHub Actions 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
